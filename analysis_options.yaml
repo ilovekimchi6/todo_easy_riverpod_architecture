@@ -1,1 +1,15 @@
 include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    - prefer_single_quotes
+
+analyzer:
+  plugins:
+    - custom_lint
+  exclude:
+    - "**.freezed.dart"
+    - "**.g.dart"
+    - "**.gr.dart"
+    - "**/generated_plugin_registrant.dart"
+    - "**.graphql.dart"
