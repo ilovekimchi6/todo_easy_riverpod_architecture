@@ -1,4 +1,5 @@
 import 'package:auto_route/auto_route.dart';
+import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:todo_easy_riverpod_architecture/core/common_providers/sembast_db.dart';
 import 'package:todo_easy_riverpod_architecture/features/todo/models/todo.dart';
 import 'package:todo_easy_riverpod_architecture/features/todo/repositories/sembast_todo_repository.dart';
@@ -12,9 +13,13 @@ class AddTodoScreen extends HookConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final TextEditingController titleController = TextEditingController();
+    /// `TextEditingController` for the todo title.
+    final titleController = useTextEditingController();
+
+    /// `Watch` the Sembast repository provider to get [todos].
     final db = ref.watch(sembastDatabaseProvider).requireValue;
 
+    /// Generate a `unique ID` for the [todo].
     var uuid = const Uuid();
     String todoId = uuid.v1();
 
@@ -39,15 +44,19 @@ class AddTodoScreen extends HookConsumerWidget {
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
-                  // Handle button press
+                  /// Handle button press
                   if (titleController.text.isEmpty) {
+                    /// If [title] is `empty`, do nothing
                     return;
                   } else {
+                    /// `Add` the [todo] to the database
                     ref.read(sembastRepositoryProvider(db).notifier).addTodo(
                         Todo(
                             title: titleController.text,
                             userId: '1',
                             id: todoId));
+
+                    /// `Navigate` back to the [previous screen] using `pop()`
                     AutoRouter.of(context).pop();
                   }
                 },

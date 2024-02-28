@@ -6,9 +6,8 @@ import 'package:sembast/sembast.dart';
 
 part 'remote_todo_repository.g.dart';
 
-//Please note this is not yet implemented
-//Feel free to implement the code for your remore repository!
-
+/// This class represents a [remote repository] for `managing` todo data.
+/// NOTE: It has not been implemented yet.
 @riverpod
 class RemoteRepository extends _$RemoteRepository implements TodoRepository {
   @override
@@ -16,22 +15,29 @@ class RemoteRepository extends _$RemoteRepository implements TodoRepository {
     return getSongsStream();
   }
 
+  /// `Add` a new todo to the remote repository.
+  @override
   Future<TodoStatus> addTodo(Todo todo) {
-    // TODO: implement addTodo
+    // TODO: Implement addTodo
     throw UnimplementedError();
   }
 
+  /// `Remove` a todo from the remote repository by its `ID`.
+  @override
   Future<TodoStatus> removeTodoById(String id) {
-    // TODO: implement removeTodoById
+    // TODO: Implement removeTodoById
     throw UnimplementedError();
   }
 
+  /// `Update` a todo in the remote repository by its `ID`.
+  @override
   Future<TodoStatus> updateTodoById(String id, Todo todo) {
-    // TODO: implement updateTodoById
+    // TODO: Implement updateTodoById
     throw UnimplementedError();
   }
 }
 
+/// This function returns a `stream` of todo items.
 Stream<List<Todo>> getSongsStream() async* {
   List<Todo> song = [];
   yield song;

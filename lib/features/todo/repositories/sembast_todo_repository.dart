@@ -8,22 +8,25 @@ import 'package:sembast/sembast.dart';
 
 part 'sembast_todo_repository.g.dart';
 
-
-
-//The repository is a Notifier class with all the methods that we need to interact with the database. It implements TodoRepository abstract class.
-//Please note the business logic and parsing data is done inside the notifier class, because abstracting away the state management from the repository makes for badder code.
-//You can read more about this in the Riverpod Documentation!
-
-//NOTE- Not one method is inherently better than the other, you can always create a repository class and make a provider that returns the repository class too.
-//This abstracts away the state management from the repository, but it is not necessary to do so.
-
-
-//I have chosen to use a notifier class because it is a good way to handle state management and business logic in one place.
-
-
-//If you want to read about reepository pattern please read here!
-//https://codewithandrea.com/articles/flutter-repository-pattern/
-
+/// The repository [manages interaction] with the Sembast database for todo data.
+///
+/// The repository is a `Notifier` class with all the methods that we need to interact with the `database`. It implements [TodoRepository] abstract class.
+///
+/// Please note the [business logic] and [parsing data] is done [inside] the `notifier class`, because `abstracting` away the state management from the repository makes for [badder code].
+///
+///
+/// You can [read more] about this in the Riverpod Documentation!
+///
+///
+/// NOTE: Not one method is inherently better than the other, you can always create a repository class and make a provider that returns the repository class too.
+/// This abstracts away the state management from the repository, but it is not necessary to do so.
+///
+///
+/// I have chosen to use a `notifier` class because it is a good way to handle state management and business logic in one place.
+///
+///
+/// If you want to [read] about [repository pattern] please read here!
+/// https://codewithandrea.com/articles/flutter-repository-pattern/
 @riverpod
 class SembastRepository extends _$SembastRepository implements TodoRepository {
   final StoreRef<int, Map<String, dynamic>> _store =
@@ -48,7 +51,6 @@ class SembastRepository extends _$SembastRepository implements TodoRepository {
     });
   }
 
-
   @override
   Future<TodoStatus> addTodo(Todo todo) async {
     await _store.add(database, todo.toJson());
@@ -67,7 +69,6 @@ class SembastRepository extends _$SembastRepository implements TodoRepository {
     }
   }
 
-
   @override
   Future<TodoStatus> updateTodoById(String todoId, Todo todo) async {
     int intTodoId = int.parse(todo.id);
@@ -84,4 +85,3 @@ class SembastRepository extends _$SembastRepository implements TodoRepository {
     }
   }
 }
-

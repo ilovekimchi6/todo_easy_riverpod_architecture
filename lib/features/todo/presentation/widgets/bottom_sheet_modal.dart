@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-//Common widgets are widgets that are used in multiple places in the same FEATURE.
-//Please note feature, not the entire app.
+/// Common widgets are widgets that are used in [multiple places] in the same FEATURE.
+/// Please note `feature`, not the entire app.
 
 class AddUpdateTodoModal extends StatefulHookConsumerWidget {
   final String? initialTitle;
