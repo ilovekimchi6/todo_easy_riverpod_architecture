@@ -35,7 +35,7 @@
 #### Getting Started
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/ilovekimchi6/todo_riverpod_architecture_example.git](https://github.com/ilovekimchi6/todo_easy_riverpod_architecture)
+   git clone [https://github.com/ilovekimchi6/todo_easy_riverpod_architecture.git](https://github.com/ilovekimchi6/todo_easy_riverpod_architecture)
    ```
 
 2. Install dependencies:
@@ -56,7 +56,7 @@
 
 > [!IMPORTANT]
 > If you wish to contribute a change to any of the existing features or add new ones to this repo,
-> please feel free to contribute and send a [pull request]([https://github.com/ilovekimchi6/todo_riverpod_architecture_example/pulls](https://github.com/ilovekimchi6/todo_easy_riverpod_architecture/pulls)). I welcome and encourage all pull requests. It usually takes me within 24-48 hours to respond to any issue or request.
+> please feel free to contribute and send a [pull request]([https://github.com/ilovekimchi6/todo_easy_riverpod_architecture.git/pulls](https://github.com/ilovekimchi6/todo_easy_riverpod_architecture/pulls)). I welcome and encourage all pull requests. It usually takes me within 24-48 hours to respond to any issue or request.
 
 ### License:
 
