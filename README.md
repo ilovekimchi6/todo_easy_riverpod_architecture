@@ -35,7 +35,7 @@
 #### Getting Started
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/ilovekimchi6/todo_easy_riverpod_architecture.git](https://github.com/ilovekimchi6/todo_easy_riverpod_architecture)
+   git clone [https://github.com/ilovekimchi6/todo_easy_riverpod_architecture.git]
    ```
 
 2. Install dependencies:
