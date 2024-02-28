@@ -1,4 +1,4 @@
-## Todo_Easy_Riverpod_Example: Todo Riverpod Architecture Example
+## Todo_Easy_Riverpod_Example: A Simple Riverpod Architecture Example for Beginners
 
 **Todo_Easy_Riverpod_Example** is a Flutter application that showcases a todo list management system using the Riverpod architecture. It allows users to perform CRUD (Create, Read, Update, Delete) operations on todo items while following a structured and scalable architecture.
 
@@ -26,16 +26,10 @@
 * **Remote Database:** Appwrite
 
 
-### Getting Started:
-
-1. Clone this repository.
-2. Install dependencies: `flutter pub get`
-3. Ensure you have Flutter and Dart installed on your development environment.
-4. Run the app: `flutter run`
-#### Getting Started
+### Getting Started
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/ilovekimchi6/todo_easy_riverpod_architecture.git]
+   git clone https://github.com/ilovekimchi6/todo_easy_riverpod_architecture.git
    ```
 
 2. Install dependencies:
@@ -45,7 +39,7 @@
 
 3. Open the project in VSCode:
    ```bash
-   cd todo_riverpod_architecture_example
+   cd todo_easy_riverpod_architecture
    code .
    ```
 4. Run the app:
@@ -56,7 +50,7 @@
 
 > [!IMPORTANT]
 > If you wish to contribute a change to any of the existing features or add new ones to this repo,
-> please feel free to contribute and send a [pull request]([https://github.com/ilovekimchi6/todo_easy_riverpod_architecture.git/pulls](https://github.com/ilovekimchi6/todo_easy_riverpod_architecture/pulls)). I welcome and encourage all pull requests. It usually takes me within 24-48 hours to respond to any issue or request.
+> please feel free to contribute and send a [pull request](https://github.com/ilovekimchi6/todo_easy_riverpod_architecture.git/pulls). I welcome and encourage all pull requests. It usually takes me within 24-48 hours to respond to any issue or request.
 
 ### License:
 
