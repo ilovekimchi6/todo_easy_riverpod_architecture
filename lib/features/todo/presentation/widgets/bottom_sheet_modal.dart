@@ -41,10 +41,8 @@ class _AddUpdateTodoModalState extends ConsumerState<AddUpdateTodoModal> {
                     .read(sembastRepositoryProvider(db).notifier)
                     .updateTodoById(widget.todo!.id,
                         widget.todo!.copyWith(title: titleController.text));
-
-                if (mounted) {
-                  Navigator.pop(context);
-                }
+                if (!context.mounted) return;
+                Navigator.pop(context);
               } catch (error) {}
             },
           ),

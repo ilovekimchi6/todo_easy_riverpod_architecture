@@ -11,7 +11,6 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_hooks: ^0.20.5
-  freezed: ^2.4.7
   hooks_riverpod: ^2.4.10
   json_annotation: ^4.8.1
   path: ^1.8.3
@@ -19,6 +18,8 @@ dependencies:
   riverpod_annotation: ^2.3.4
   sembast: ^3.6.0
   uuid: ^4.3.3
+  freezed_annotation: ^2.4.1
+
 
 dev_dependencies:
   flutter_test:
@@ -29,8 +30,8 @@ dev_dependencies:
   custom_lint: ^0.6.2
   riverpod_lint: ^2.3.9
   auto_route_generator: ^7.3.2
-  freezed_annotation: ^2.4.1
   json_serializable: ^6.7.1
+  freezed: ^2.4.7
 
 flutter:
   uses-material-design: true
