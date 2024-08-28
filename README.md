@@ -1,5 +1,7 @@
 ## Todo_Easy_Riverpod_Example: A Simple Riverpod Architecture Example for Beginners
 
+## Hello, this architecture is only for beginners, but scales well. If you want a more complete architecture for very big projects please wait for more complete projects I make, thank you <3
+
 **Todo_Easy_Riverpod_Example** is a Flutter application that showcases a todo list management system using the Riverpod architecture. It allows users to perform CRUD (Create, Read, Update, Delete) operations on todo items while following a structured and scalable architecture.
 
 ### Features:
