@@ -19,6 +19,9 @@
     ];
     workspace = {
       onCreate = { };
+      onStart = {
+        start-build-runner = "dart run build_runner build";
+      };
     };
     previews = {
       enable = true;
