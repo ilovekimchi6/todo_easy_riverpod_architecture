@@ -1,11 +1,10 @@
+import 'package:flutter/services.dart';
 import 'package:todo_easy_riverpod_architecture/core/common_providers/sembast_db.dart';
 import 'package:todo_easy_riverpod_architecture/core/routing/app_router.dart';
 import 'package:todo_easy_riverpod_architecture/core/themes/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:todo_easy_riverpod_architecture/features/app/presentation/error_screen.dart';
-import 'package:todo_easy_riverpod_architecture/features/app/presentation/splash_screen.dart';
 
 /// This function is responsible for warming up all the providers that will be needed in the app.
 /// We warm up `providers` to ensure that they are [initialized] and ready for use when needed.
@@ -24,8 +23,12 @@ void main() {
             ref.watch(sembastDatabaseProvider),
           ];
 
+          /// Check if every state has data.
           final hasData = states.every((state) => state is AsyncData);
+
+          /// Gather list of states that have an error
           final errorStates = states.whereType<AsyncError>();
+
 
           return MaterialApp(
             home: errorStates.isNotEmpty
@@ -59,3 +62,67 @@ class MainApp extends HookConsumerWidget {
     );
   }
 }
+
+/// Error screen to catch errors in app.
+/// 
+/// Will display a snackbar with the error message and allow user
+/// to redirect back to app.
+class ErrorScreen extends HookWidget {
+  final Object error;
+  final VoidCallback onRefresh;
+
+  const ErrorScreen({
+    super.key,
+    required this.error,
+    required this.onRefresh,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    useEffect(() {
+      /// Handle different types of errors here.
+      final message = switch (error.runtimeType) {
+        const (MissingPluginException) =>
+          'Missing plugin: ${(error as MissingPluginException).message}',
+        const (PlatformException) =>
+          'Platform exception: ${(error as PlatformException).message}',
+        _ => error.toString()
+      };
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text(message)),
+        );
+      });
+      return null;
+    }, [error]);
+
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            ElevatedButton(
+              onPressed: onRefresh,
+              child: const Text('Refresh app'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+/// Splash screen to show while loading app data.
+class SplashScreen extends StatelessWidget {
+  const SplashScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      body: Center(
+        child: Text('Splash Screen'),
+      ),
+    );
+  }
+}
+
