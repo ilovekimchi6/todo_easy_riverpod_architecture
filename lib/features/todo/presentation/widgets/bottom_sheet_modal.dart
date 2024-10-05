@@ -43,7 +43,13 @@ class _AddUpdateTodoModalState extends ConsumerState<AddUpdateTodoModal> {
                         widget.todo!.copyWith(title: titleController.text));
                 if (!context.mounted) return;
                 Navigator.pop(context);
-              } catch (error) {}
+              } catch (error) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(error.toString()),
+                  ),
+                );
+              }
             },
           ),
         ],

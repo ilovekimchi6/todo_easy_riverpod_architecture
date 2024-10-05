@@ -7,33 +7,17 @@
 // ignore_for_file: type=lint
 // coverage:ignore-file
 
-part of 'app_router.dart';
-
-abstract class _$AppRouter extends RootStackRouter {
-  // ignore: unused_element
-  _$AppRouter({super.navigatorKey});
-
-  @override
-  final Map<String, PageFactory> pagesMap = {
-    AddTodoRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const AddTodoScreen(),
-      );
-    },
-    TodoHomeRoute.name: (routeData) {
-      return AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: const TodoHomeScreen(),
-      );
-    },
-  };
-}
+// ignore_for_file: no_leading_underscores_for_library_prefixes
+import 'package:auto_route/auto_route.dart' as _i3;
+import 'package:todo_easy_riverpod_architecture/features/todo/presentation/screens/add_todo_screen.dart'
+    as _i1;
+import 'package:todo_easy_riverpod_architecture/features/todo/presentation/screens/todo_home_screen.dart'
+    as _i2;
 
 /// generated route for
-/// [AddTodoScreen]
-class AddTodoRoute extends PageRouteInfo<void> {
-  const AddTodoRoute({List<PageRouteInfo>? children})
+/// [_i1.AddTodoScreen]
+class AddTodoRoute extends _i3.PageRouteInfo<void> {
+  const AddTodoRoute({List<_i3.PageRouteInfo>? children})
       : super(
           AddTodoRoute.name,
           initialChildren: children,
@@ -41,13 +25,18 @@ class AddTodoRoute extends PageRouteInfo<void> {
 
   static const String name = 'AddTodoRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static _i3.PageInfo page = _i3.PageInfo(
+    name,
+    builder: (data) {
+      return const _i1.AddTodoScreen();
+    },
+  );
 }
 
 /// generated route for
-/// [TodoHomeScreen]
-class TodoHomeRoute extends PageRouteInfo<void> {
-  const TodoHomeRoute({List<PageRouteInfo>? children})
+/// [_i2.TodoHomeScreen]
+class TodoHomeRoute extends _i3.PageRouteInfo<void> {
+  const TodoHomeRoute({List<_i3.PageRouteInfo>? children})
       : super(
           TodoHomeRoute.name,
           initialChildren: children,
@@ -55,5 +44,10 @@ class TodoHomeRoute extends PageRouteInfo<void> {
 
   static const String name = 'TodoHomeRoute';
 
-  static const PageInfo<void> page = PageInfo<void>(name);
+  static _i3.PageInfo page = _i3.PageInfo(
+    name,
+    builder: (data) {
+      return const _i2.TodoHomeScreen();
+    },
+  );
 }

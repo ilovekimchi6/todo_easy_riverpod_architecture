@@ -1,6 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:todo_easy_riverpod_architecture/core/common_providers/sembast_db.dart';
-import 'package:todo_easy_riverpod_architecture/core/routing/app_router.dart';
+import 'package:todo_easy_riverpod_architecture/core/routing/app_router.gr.dart';
 import 'package:todo_easy_riverpod_architecture/core/themes/theme.dart';
 import 'package:todo_easy_riverpod_architecture/features/todo/models/todo.dart';
 import 'package:todo_easy_riverpod_architecture/features/todo/presentation/widgets/bottom_sheet_modal.dart';

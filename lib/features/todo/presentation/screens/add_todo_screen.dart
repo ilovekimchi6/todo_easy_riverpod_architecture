@@ -57,11 +57,11 @@ class AddTodoScreen extends HookConsumerWidget {
                             id: todoId));
 
                     /// `Navigate` back to the [previous screen] using `pop()`
-                    AutoRouter.of(context).pop();
+                    AutoRouter.of(context).removeLast();
                   }
                 },
                 style: ButtonStyle(
-                  shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                  shape: WidgetStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(10.0),
                     ),
