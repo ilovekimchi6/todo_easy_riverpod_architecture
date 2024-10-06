@@ -10,5 +10,7 @@
         "**/*.g.dart": true,
         "**/*.gr.dart": true,
     },
-    "hide-files.files": []
+    "hide-files.files": [],
+    "IDX.aI.enableInlineCompletion": true,
+    "IDX.aI.enableCodebaseIndexing": true
 }

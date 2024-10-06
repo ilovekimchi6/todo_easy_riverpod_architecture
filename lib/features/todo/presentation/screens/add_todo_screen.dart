@@ -1,9 +1,9 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:todo_easy_riverpod_architecture/core/common_providers/sembast_db.dart';
-import 'package:todo_easy_riverpod_architecture/features/todo/models/todo.dart';
-import 'package:todo_easy_riverpod_architecture/features/todo/repositories/sembast_todo_repository.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_template/core/common_providers/sembast_db.dart';
+import 'package:flutter_template/features/todo/models/todo.dart';
+import 'package:flutter_template/features/todo/repositories/sembast_todo_repository.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:uuid/uuid.dart';
 

@@ -1,4 +1,4 @@
-import 'package:todo_easy_riverpod_architecture/features/todo/models/todo.dart';
+import 'package:flutter_template/features/todo/models/todo.dart';
 
 /// We return `sealed` class to handle different `states`
 /// This lets us [exhaustively check] for every type using the `switch` pattern

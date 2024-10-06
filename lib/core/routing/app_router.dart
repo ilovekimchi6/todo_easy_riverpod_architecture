@@ -1,5 +1,5 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:todo_easy_riverpod_architecture/core/routing/app_router.gr.dart';
+import 'package:flutter_template/core/routing/app_router.gr.dart';
 
 /// Manages all [routing logic] for the application.
 /// Allows defining `routes` and specifying `initial routes`.

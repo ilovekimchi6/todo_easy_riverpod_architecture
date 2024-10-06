@@ -1,9 +1,9 @@
-import 'package:flutter/services.dart';
-import 'package:todo_easy_riverpod_architecture/core/common_providers/sembast_db.dart';
-import 'package:todo_easy_riverpod_architecture/core/routing/app_router.dart';
-import 'package:todo_easy_riverpod_architecture/core/themes/theme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
+import 'package:flutter_template/core/common_providers/sembast_db.dart';
+import 'package:flutter_template/core/routing/app_router.dart';
+import 'package:flutter_template/core/themes/theme.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 /// This function is responsible for warming up all the providers that will be needed in the app.
@@ -28,7 +28,6 @@ void main() {
 
           /// Gather list of states that have an error
           final errorStates = states.whereType<AsyncError>();
-
 
           return MaterialApp(
             home: errorStates.isNotEmpty
@@ -64,7 +63,7 @@ class MainApp extends HookConsumerWidget {
 }
 
 /// Error screen to catch errors in app.
-/// 
+///
 /// Will display a snackbar with the error message and allow user
 /// to redirect back to app.
 class ErrorScreen extends HookWidget {
@@ -125,4 +124,3 @@ class SplashScreen extends StatelessWidget {
     );
   }
 }
-
