@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Update goldens",
+        "type": "dart",
+        "request": "launch",
+        "args": ["--update-goldens"], 
+        "codeLens": {
+          "for": [ "run-test", "run-test-file"],
+          "title": "Update goldens"
+        },
+      },
+      {
+        "name": "Coverage",
+        "type": "dart",
+        "request": "launch",
+        "args": ["--coverage"], 
+        "codeLens": {
+          "for": [ "run-test", "run-test-file"],
+          "title": "Coverage"
+        },
+      }
+    ]
+  }
