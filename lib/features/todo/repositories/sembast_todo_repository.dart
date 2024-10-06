@@ -1,8 +1,8 @@
 import 'dart:math';
 
-import 'package:todo_easy_riverpod_architecture/features/todo/todo_status.sealed.dart';
-import 'package:todo_easy_riverpod_architecture/features/todo/models/todo.dart';
-import 'package:todo_easy_riverpod_architecture/features/todo/repositories/todo_repository.dart';
+import 'package:flutter_template/features/todo/models/todo.dart';
+import 'package:flutter_template/features/todo/repositories/todo_repository.dart';
+import 'package:flutter_template/features/todo/todo_status.sealed.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:sembast/sembast.dart';
 

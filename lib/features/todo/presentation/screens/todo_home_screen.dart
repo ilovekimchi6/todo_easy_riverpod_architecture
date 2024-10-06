@@ -1,11 +1,11 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:todo_easy_riverpod_architecture/core/common_providers/sembast_db.dart';
-import 'package:todo_easy_riverpod_architecture/core/routing/app_router.dart';
-import 'package:todo_easy_riverpod_architecture/core/themes/theme.dart';
-import 'package:todo_easy_riverpod_architecture/features/todo/models/todo.dart';
-import 'package:todo_easy_riverpod_architecture/features/todo/presentation/widgets/bottom_sheet_modal.dart';
-import 'package:todo_easy_riverpod_architecture/features/todo/repositories/sembast_todo_repository.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_template/core/common_providers/sembast_db.dart';
+import 'package:flutter_template/core/routing/app_router.gr.dart';
+import 'package:flutter_template/core/themes/theme.dart';
+import 'package:flutter_template/features/todo/models/todo.dart';
+import 'package:flutter_template/features/todo/presentation/widgets/bottom_sheet_modal.dart';
+import 'package:flutter_template/features/todo/repositories/sembast_todo_repository.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:sembast/sembast.dart';
 

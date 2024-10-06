@@ -25,8 +25,12 @@ mixin _$Todo {
   bool get completed => throw _privateConstructorUsedError;
   String get userId => throw _privateConstructorUsedError;
 
+  /// Serializes this Todo to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of Todo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $TodoCopyWith<Todo> get copyWith => throw _privateConstructorUsedError;
 }
 
@@ -48,6 +52,8 @@ class _$TodoCopyWithImpl<$Res, $Val extends Todo>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of Todo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -94,6 +100,8 @@ class __$$TodoImplCopyWithImpl<$Res>
   __$$TodoImplCopyWithImpl(_$TodoImpl _value, $Res Function(_$TodoImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of Todo
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -162,11 +170,13 @@ class _$TodoImpl implements _Todo {
             (identical(other.userId, userId) || other.userId == userId));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(runtimeType, id, title, completed, userId);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of Todo
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$TodoImplCopyWith<_$TodoImpl> get copyWith =>
@@ -197,8 +207,11 @@ abstract class _Todo implements Todo {
   bool get completed;
   @override
   String get userId;
+
+  /// Create a copy of Todo
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$TodoImplCopyWith<_$TodoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

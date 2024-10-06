@@ -38,16 +38,96 @@ abstract class _$SembastRepository
   );
 }
 
-/// See also [SembastRepository].
+/// The repository [manages interaction] with the Sembast database for todo data.
+///
+/// The repository is a `Notifier` class with all the methods that we need to interact with the `database`. It implements [TodoRepository] abstract class.
+///
+/// Please note the [business logic] and [parsing data] is done [inside] the `notifier class`, because `abstracting` away the state management from the repository makes for [badder code].
+///
+///
+/// You can [read more] about this in the Riverpod Documentation!
+///
+///
+/// NOTE: Not one method is inherently better than the other, you can always create a repository class and make a provider that returns the repository class too.
+/// This abstracts away the state management from the repository, but it is not necessary to do so.
+///
+///
+/// I have chosen to use a `notifier` class because it is a good way to handle state management and business logic in one place.
+///
+///
+/// If you want to [read] about [repository pattern] please read here!
+/// https://codewithandrea.com/articles/flutter-repository-pattern/
+///
+/// Copied from [SembastRepository].
 @ProviderFor(SembastRepository)
 const sembastRepositoryProvider = SembastRepositoryFamily();
 
-/// See also [SembastRepository].
+/// The repository [manages interaction] with the Sembast database for todo data.
+///
+/// The repository is a `Notifier` class with all the methods that we need to interact with the `database`. It implements [TodoRepository] abstract class.
+///
+/// Please note the [business logic] and [parsing data] is done [inside] the `notifier class`, because `abstracting` away the state management from the repository makes for [badder code].
+///
+///
+/// You can [read more] about this in the Riverpod Documentation!
+///
+///
+/// NOTE: Not one method is inherently better than the other, you can always create a repository class and make a provider that returns the repository class too.
+/// This abstracts away the state management from the repository, but it is not necessary to do so.
+///
+///
+/// I have chosen to use a `notifier` class because it is a good way to handle state management and business logic in one place.
+///
+///
+/// If you want to [read] about [repository pattern] please read here!
+/// https://codewithandrea.com/articles/flutter-repository-pattern/
+///
+/// Copied from [SembastRepository].
 class SembastRepositoryFamily extends Family<AsyncValue<List<Todo>>> {
-  /// See also [SembastRepository].
+  /// The repository [manages interaction] with the Sembast database for todo data.
+  ///
+  /// The repository is a `Notifier` class with all the methods that we need to interact with the `database`. It implements [TodoRepository] abstract class.
+  ///
+  /// Please note the [business logic] and [parsing data] is done [inside] the `notifier class`, because `abstracting` away the state management from the repository makes for [badder code].
+  ///
+  ///
+  /// You can [read more] about this in the Riverpod Documentation!
+  ///
+  ///
+  /// NOTE: Not one method is inherently better than the other, you can always create a repository class and make a provider that returns the repository class too.
+  /// This abstracts away the state management from the repository, but it is not necessary to do so.
+  ///
+  ///
+  /// I have chosen to use a `notifier` class because it is a good way to handle state management and business logic in one place.
+  ///
+  ///
+  /// If you want to [read] about [repository pattern] please read here!
+  /// https://codewithandrea.com/articles/flutter-repository-pattern/
+  ///
+  /// Copied from [SembastRepository].
   const SembastRepositoryFamily();
 
-  /// See also [SembastRepository].
+  /// The repository [manages interaction] with the Sembast database for todo data.
+  ///
+  /// The repository is a `Notifier` class with all the methods that we need to interact with the `database`. It implements [TodoRepository] abstract class.
+  ///
+  /// Please note the [business logic] and [parsing data] is done [inside] the `notifier class`, because `abstracting` away the state management from the repository makes for [badder code].
+  ///
+  ///
+  /// You can [read more] about this in the Riverpod Documentation!
+  ///
+  ///
+  /// NOTE: Not one method is inherently better than the other, you can always create a repository class and make a provider that returns the repository class too.
+  /// This abstracts away the state management from the repository, but it is not necessary to do so.
+  ///
+  ///
+  /// I have chosen to use a `notifier` class because it is a good way to handle state management and business logic in one place.
+  ///
+  ///
+  /// If you want to [read] about [repository pattern] please read here!
+  /// https://codewithandrea.com/articles/flutter-repository-pattern/
+  ///
+  /// Copied from [SembastRepository].
   SembastRepositoryProvider call(
     Database database,
   ) {
@@ -80,10 +160,50 @@ class SembastRepositoryFamily extends Family<AsyncValue<List<Todo>>> {
   String? get name => r'sembastRepositoryProvider';
 }
 
-/// See also [SembastRepository].
+/// The repository [manages interaction] with the Sembast database for todo data.
+///
+/// The repository is a `Notifier` class with all the methods that we need to interact with the `database`. It implements [TodoRepository] abstract class.
+///
+/// Please note the [business logic] and [parsing data] is done [inside] the `notifier class`, because `abstracting` away the state management from the repository makes for [badder code].
+///
+///
+/// You can [read more] about this in the Riverpod Documentation!
+///
+///
+/// NOTE: Not one method is inherently better than the other, you can always create a repository class and make a provider that returns the repository class too.
+/// This abstracts away the state management from the repository, but it is not necessary to do so.
+///
+///
+/// I have chosen to use a `notifier` class because it is a good way to handle state management and business logic in one place.
+///
+///
+/// If you want to [read] about [repository pattern] please read here!
+/// https://codewithandrea.com/articles/flutter-repository-pattern/
+///
+/// Copied from [SembastRepository].
 class SembastRepositoryProvider extends AutoDisposeStreamNotifierProviderImpl<
     SembastRepository, List<Todo>> {
-  /// See also [SembastRepository].
+  /// The repository [manages interaction] with the Sembast database for todo data.
+  ///
+  /// The repository is a `Notifier` class with all the methods that we need to interact with the `database`. It implements [TodoRepository] abstract class.
+  ///
+  /// Please note the [business logic] and [parsing data] is done [inside] the `notifier class`, because `abstracting` away the state management from the repository makes for [badder code].
+  ///
+  ///
+  /// You can [read more] about this in the Riverpod Documentation!
+  ///
+  ///
+  /// NOTE: Not one method is inherently better than the other, you can always create a repository class and make a provider that returns the repository class too.
+  /// This abstracts away the state management from the repository, but it is not necessary to do so.
+  ///
+  ///
+  /// I have chosen to use a `notifier` class because it is a good way to handle state management and business logic in one place.
+  ///
+  ///
+  /// If you want to [read] about [repository pattern] please read here!
+  /// https://codewithandrea.com/articles/flutter-repository-pattern/
+  ///
+  /// Copied from [SembastRepository].
   SembastRepositoryProvider(
     Database database,
   ) : this._internal(

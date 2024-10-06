@@ -1,0 +1,15 @@
+name: test
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - uses: subosito/flutter-action@main
+        with:
+          cache: true
+      - run: flutter pub get
+      - run: flutter test

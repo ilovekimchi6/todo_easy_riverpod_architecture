@@ -6,9 +6,11 @@ part of 'sembast_db.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$sembastDatabaseHash() => r'cf8c0dd951c1dd81ae7903dc2894ed8b7902b45c';
+String _$sembastDatabaseHash() => r'06dbd28fa54b0b536bf3a9095bccdba1fc14690f';
 
-/// See also [sembastDatabase].
+/// Sembast Database is created using a `future provider`.
+///
+/// Copied from [sembastDatabase].
 @ProviderFor(sembastDatabase)
 final sembastDatabaseProvider = FutureProvider<Database>.internal(
   sembastDatabase,

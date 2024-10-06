@@ -16,8 +16,9 @@
 - [x] Set up Riverpod architecture.
 - [x] Implement CRUD operations.
 - [ ] Add authentication for users.
-- [ ] Implement local database with Sembast for offline storage.
+- [x] Implement local database with Sembast for offline storage.
 - [ ] Integrate Appwrite for storing todo list remotely.
+- [ ] Unit, widget, integration tests
 
 ### Tech Stack:
 
@@ -29,6 +30,8 @@
 
 
 ### Getting Started
+
+#### Local app development
 1. Clone the repository:
    ```bash
    git clone https://github.com/ilovekimchi6/todo_easy_riverpod_architecture.git
@@ -48,6 +51,29 @@
    ```bash
     flutter run
    ```
+#### Develop in Google IDX
+Get started now by opening up a workspace in Google IDX.
+
+This will build and run this current app on an android and web emulator in a VS Code console.
+
+Read more here: https://developers.google.com/idx/guides
+
+<a href="https://idx.google.com/import?url=https://github.com/Flag-Seeker/todo_easy_riverpod_architecture">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://cdn.idx.dev/btn/open_dark_32.svg">
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://cdn.idx.dev/btn/open_light_32.svg">
+    <img
+      height="32"
+      alt="Open in IDX"
+      src="https://cdn.idx.dev/btn/open_purple_32.svg">
+  </picture>
+</a>
+
+**TODO:** change the git url here
 
 
 > [!IMPORTANT]

@@ -6,7 +6,7 @@ part of 'remote_todo_repository.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$remoteRepositoryHash() => r'9f583b3d9252f99f4c33c2a9b6ce881bee5b5e35';
+String _$remoteRepositoryHash() => r'676904692733ff678a252660343b1ef253ec08c3';
 
 /// Copied from Dart SDK
 class _SystemHash {
@@ -38,16 +38,28 @@ abstract class _$RemoteRepository
   );
 }
 
-/// See also [RemoteRepository].
+/// This class represents a [remote repository] for `managing` todo data.
+/// NOTE: It has not been implemented yet.
+///
+/// Copied from [RemoteRepository].
 @ProviderFor(RemoteRepository)
 const remoteRepositoryProvider = RemoteRepositoryFamily();
 
-/// See also [RemoteRepository].
+/// This class represents a [remote repository] for `managing` todo data.
+/// NOTE: It has not been implemented yet.
+///
+/// Copied from [RemoteRepository].
 class RemoteRepositoryFamily extends Family<AsyncValue<List<Todo>>> {
-  /// See also [RemoteRepository].
+  /// This class represents a [remote repository] for `managing` todo data.
+  /// NOTE: It has not been implemented yet.
+  ///
+  /// Copied from [RemoteRepository].
   const RemoteRepositoryFamily();
 
-  /// See also [RemoteRepository].
+  /// This class represents a [remote repository] for `managing` todo data.
+  /// NOTE: It has not been implemented yet.
+  ///
+  /// Copied from [RemoteRepository].
   RemoteRepositoryProvider call(
     Database database,
   ) {
@@ -80,10 +92,16 @@ class RemoteRepositoryFamily extends Family<AsyncValue<List<Todo>>> {
   String? get name => r'remoteRepositoryProvider';
 }
 
-/// See also [RemoteRepository].
+/// This class represents a [remote repository] for `managing` todo data.
+/// NOTE: It has not been implemented yet.
+///
+/// Copied from [RemoteRepository].
 class RemoteRepositoryProvider extends AutoDisposeStreamNotifierProviderImpl<
     RemoteRepository, List<Todo>> {
-  /// See also [RemoteRepository].
+  /// This class represents a [remote repository] for `managing` todo data.
+  /// NOTE: It has not been implemented yet.
+  ///
+  /// Copied from [RemoteRepository].
   RemoteRepositoryProvider(
     Database database,
   ) : this._internal(

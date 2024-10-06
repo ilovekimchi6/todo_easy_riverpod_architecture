@@ -8,7 +8,13 @@ part of 'theme.dart';
 
 String _$themeNotifierHash() => r'e119d56d9bf8b8d7c19624997f99d116098b45e9';
 
-/// See also [ThemeNotifier].
+/// `ThemeNotifier` is a `AutoDisposeNotifier` that manages the theme settings
+///
+/// This was recommended way from the Riverpod documentation. Please refer here if you want more information about the following code.
+/// https://riverpod.dev/docs/concepts/why_immutability#using-immutable-state
+/// Manages the theme settings and provides methods to [change] the theme.
+///
+/// Copied from [ThemeNotifier].
 @ProviderFor(ThemeNotifier)
 final themeNotifierProvider =
     AutoDisposeNotifierProvider<ThemeNotifier, ThemeSettings>.internal(

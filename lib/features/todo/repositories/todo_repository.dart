@@ -1,5 +1,5 @@
-import 'package:todo_easy_riverpod_architecture/features/todo/todo_status.sealed.dart';
-import 'package:todo_easy_riverpod_architecture/features/todo/models/todo.dart';
+import 'package:flutter_template/features/todo/models/todo.dart';
+import 'package:flutter_template/features/todo/todo_status.sealed.dart';
 import 'package:sembast/sembast.dart';
 
 /// Abstract class defining methods for interacting with todo data,
