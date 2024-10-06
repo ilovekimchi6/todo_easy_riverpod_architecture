@@ -19,9 +19,9 @@
     ];
     workspace = {
       onCreate = {
-        flutter-upgrade = ''flutter upgrade'';
-        pub-upgrade = ''flutter pub upgrade'';
         build-flutter = ''
+          flutter upgrade
+          flutter pub upgrade
           cd /home/user/myapp/android
 
           ./gradlew \
