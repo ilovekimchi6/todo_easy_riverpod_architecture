@@ -1,36 +1,36 @@
-name: todo_easy_riverpod_architecture
+name: flutter_template
 description: "A new Flutter project."
 publish_to: 'none'
-version: 0.1.0
+version: 0.0.1
 
 environment:
   sdk: '>=3.2.5 <4.0.0'
 
 dependencies:
-  auto_route: ^9.2.2
+  auto_route:
   flutter:
     sdk: flutter
-  flutter_hooks: ^0.20.5
-  hooks_riverpod: ^2.4.10
-  json_annotation: ^4.9.0
-  path: ^1.8.3
-  path_provider: ^2.1.2
-  riverpod_annotation: ^2.3.5
-  sembast: ^3.6.0
-  uuid: ^4.3.3
-  freezed_annotation: ^2.4.1
+  flutter_hooks:
+  hooks_riverpod:
+  json_annotation: 
+  path:
+  path_provider:
+  riverpod_annotation:
+  sembast:
+  uuid:
+  freezed_annotation:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
-  riverpod_generator: ^2.4.3
-  build_runner: ^2.4.8
-  custom_lint: ^0.6.2
-  riverpod_lint: ^2.3.9
-  auto_route_generator: ^9.0.0
-  json_serializable: ^6.7.1
-  freezed: ^2.4.7
+  flutter_lints:
+  riverpod_generator:
+  build_runner:
+  custom_lint:
+  riverpod_lint:
+  auto_route_generator:
+  json_serializable:
+  freezed:
 
 flutter:
   uses-material-design: true

@@ -19,6 +19,8 @@
     ];
     workspace = {
       onCreate = {
+        flutter-upgrade = ''flutter upgrade'';
+        pub-upgrade = ''flutter pub upgrade'';
         build-flutter = ''
           cd /home/user/myapp/android
 
