@@ -1,6 +1,6 @@
 {
-    "name": "todo_easy_riverpod_architecture",
-    "short_name": "todo_easy_riverpod_architecture",
+    "name": "flutter_template",
+    "short_name": "flutter_template",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
